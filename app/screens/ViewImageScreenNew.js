@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, ImageBackground } from "react-native";
 
-function ViewImageScreen() {
+function ViewImageScreenNew() {
   return (
     <View>
       <Text>This is the View Image Screen</Text>
@@ -9,4 +9,4 @@ function ViewImageScreen() {
   )
 }
 
-export default ViewImageScreen;
+export default ViewImageScreenNew;
