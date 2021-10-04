@@ -1,12 +1,12 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import WelcomeScreen from './app/screens/WelcomeScreen';
-// import ViewImageScreenNew from './app/screens/ViewImageScreenNew';
+import ViewImageScreenNew from './app/screens/ViewImageScreenNew';
 
 export default function App() {
   return (
-      <WelcomeScreen />
-      // {/* <ViewImageScreenNew /> */}
+      // <WelcomeScreen />
+      <ViewImageScreenNew />
   );
 }
 
