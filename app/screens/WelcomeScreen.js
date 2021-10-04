@@ -7,15 +7,17 @@ function WelcomeScreen() {
         style={styles.background}
         source={require("../assets/backgroundNew.jpg")}
       >
-        <Image 
-          source={require("../assets/logo-red.png")}
-          style={styles.logo}
-        />
-        <Text
-          style={styles.text}
-        >
-          Tagline
-        </Text>
+        <View style={styles.logoContainer}>
+          <Image 
+            source={require("../assets/logo-red.png")}
+            style={styles.logo}
+          />
+          <Text
+            style={styles.text}
+          >
+            Sell What You Don't Need
+          </Text>
+        </View>
         <View
           style={styles.loginButton}  
         >
@@ -32,30 +34,30 @@ function WelcomeScreen() {
 const styles = StyleSheet.create({
   background: {
     flex: 1,
-    justifyContent: 'flex-end'
+    justifyContent: 'flex-end',
+    alignItems: 'center',
   },
   loginButton: {
     width: "100%",
     height: 70,
     backgroundColor: "#fc5c65",
   },
+  logo: {
+    width: 100,
+    height: 100,
+  },
+  logoContainer: {
+    position: 'absolute', 
+    top: 100, 
+    alignItems: 'center'
+  },
   registerButton: {
     width: "100%",
     height: 70,
     backgroundColor: "#4ECDC4",
   },
-  logo: {
-    position: 'absolute',
-    top: 100,
-    width: 100,
-    height: 100,
-    alignSelf: "center"
-  },
   text: {
     fontSize: 20,
-    position: "absolute",
-    top: 230,
-    alignSelf: "center"
   }
 })
 
